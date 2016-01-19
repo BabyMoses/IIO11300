@@ -1,8 +1,8 @@
 ﻿/*
 * Copyright (C) JAMK/IT/Esa Salmikangas
 * This file is part of the IIO11300 course project.
-* Created: 12.1.2016 Modified: 13.1.2016
-* Authors: Olli Opilas ,Esa Salmikangas
+* Created: 12.1.2016 Modified: 19.1.2016
+* Authors: Topi Rytkönen ,Esa Salmikangas
 */
 using System;
 using System.Collections.Generic;
@@ -25,37 +25,47 @@ namespace Tehtava1
   /// Interaction logic for MainWindow.xaml
   /// </summary>
   public partial class MainWindow : Window
-  {
-    public MainWindow()
     {
-      InitializeComponent();
-    }
-
-        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+        public MainWindow()
         {
-            //TODO
-            try
-            {
-                double result;
-                result = BusinessLogicWindow.CalculatePerimeter(1, 1);
-                //ei näin: BusinessLogicWindow.CalculatePerimeter(1, 1);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                //yield to an user that everything okay
-            }
+            InitializeComponent();
         }
 
-    private void btnClose_Click(object sender, RoutedEventArgs e)
-    {
-      //käynnissä olevan sovelluksen sulkeminen
-      Application.Current.Shutdown();
+        private void btnCalculate_Click(object sender, RoutedEventArgs e)
+
+            //logiikka buttosklikin alle
+        {
+
+            try
+            {
+                //haetaan syötetyt arvot
+                int WindowHeight = int.Parse(txtWindowHeight.Text);
+                int WindowWidth = int.Parse(txtWindowWidth.Text);
+                int BorderWidth = int.Parse(txtBorderWidth.Text);
+
+                //korkeampi matematiikka
+                int WindowSize = WindowWidth * WindowHeight; //ikkunan ala
+                int BorderLength = WindowWidth * 2 + WindowHeight * 2; //piiri
+                int BorderSize = (WindowSize - ((WindowHeight - (2 * BorderWidth)) * (WindowWidth - (2 * BorderWidth)))); //karmin ala
+
+                //isketään arvot kenttiin.
+                txtWindowSize.Text = WindowSize.ToString();
+                txtBorderLength.Text = BorderLength.ToString();
+                txtBorderSize.Text = BorderSize.ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Erroria pukkaa, kokeileppa oikeilla arvoilla");
+            }
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
+
   }
 
 
-}
