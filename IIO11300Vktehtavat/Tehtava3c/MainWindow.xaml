@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tehtava3C.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tehtava3c"
+        mc:Ignorable="d"
+        Title="Combinator 4D" Height="430" Width="350">
+    <StackPanel Orientation="Vertical" Margin="0,0,0,2">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock TextWrapping="Wrap" Text="Path" RenderTransformOrigin="-4.58,0.5" Height="20"/>
+            <TextBox x:Name="txtPath" Text="" Width="188" Margin="10"/>
+        </StackPanel>
+        <Button x:Name="btnGetFiles" Content="Get dem Files" Height="27" Margin="120,10,119,10" Click="btnGetFiles_Click" RenderTransformOrigin="1.35,-1.2"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock TextWrapping="Wrap" Height="26" Width="123"><Run Language="fi-fi" Text="Found files"/></TextBlock>
+        </StackPanel>
+        <ListBox x:Name="lbFiles" Width="250" Height="114" Margin="46,0,46,10"/>
+        <TextBlock x:Name="tbNotification" Text="" Width="320" Margin="10"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Target File:" Height="18"/>
+            <TextBox x:Name="txtTargetFile" Text="" Width="200" Margin="10"/>
+        </StackPanel>
+        <Button x:Name="btnCombine" Content="Combine files" Width="100" Height="30" Margin="121,10" Click="btnCombine_Click"/>
+    </StackPanel>
+</Window>
