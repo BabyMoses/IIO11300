@@ -1,0 +1,13 @@
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\bin\Debug\Tehtava6.exe.config
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\bin\Debug\Tehtava6.exe
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\bin\Debug\Tehtava6.pdb
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\MainWindow.g.cs
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\App.g.cs
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6_MarkupCompile.cache
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6_MarkupCompile.lref
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\MainWindow.baml
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6.g.resources
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6.Properties.Resources.resources
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6.csproj.GenerateResource.Cache
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6.exe
+D:\windowsohjelmoint\IIO11300\IIO11300Vktehtavat\Tehtava6\obj\Debug\Tehtava6.pdb
